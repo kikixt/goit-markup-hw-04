@@ -432,24 +432,16 @@ address {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
-
-.clients-icon {
+    border-radius: 4px;    
     fill: #AFB1B8;
-    ;
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-    fill: var(--accent-color);
-}
-
-.clients-list-item:hover,
-.clients-list-item:focus {
-    border-radius: 4px;
+.clients-link:hover,
+.clients-link:focus {
+    fill: var(--accent-color);   
     border: 1px solid var(--accent-color);
 }
+
 
 /* =====REGULAR CLIENTS END===== */
 
