@@ -1,6 +1,6 @@
 :root {
-    --accent-color: #2196F3; 
-    --main-text-color: #212121; 
+    --accent-color: #2196F3;
+    --main-text-color: #212121;
     --primary-text-color: #757575;
     --primary-white-color: #FFFFFF;
     --main-font-family: 'Roboto', sans-serif;
@@ -20,7 +20,10 @@ body {
 
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -58,7 +61,7 @@ address {
 /* =====COMPONENT START===== */
 .logo {
     color: var(--accent-color);
-    font-family: var(--logo-font-family);        
+    font-family: var(--logo-font-family);
     font-size: 26px;
     font-weight: 700;
     line-height: normal;
@@ -105,12 +108,12 @@ address {
 /* =====HEADER START===== */
 .header {
     padding: 0;
-    border-bottom: 1px solid #ECECEC;   
+    border-bottom: 1px solid #ECECEC;
 
 }
 
-.nav-container{
-    display: flex ;
+.nav-container {
+    display: flex;
     align-items: center;
 }
 
@@ -134,7 +137,7 @@ address {
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.28px; 
+    letter-spacing: 0.28px;
     margin: 0;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -147,7 +150,7 @@ address {
 .nav-list-link:hover {
     color: var(--accent-color);
 }
- 
+
 .current {
     color: var(--accent-color);
 }
@@ -159,12 +162,9 @@ address {
 
 }
 
-.contact-item-mail {
-    
+.contact-item-mail {}
 
-}
 .contact-item-tel {
-
     align-items: center;
 }
 
@@ -174,6 +174,8 @@ address {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
 }
 
 .contact:hover,
@@ -181,13 +183,25 @@ address {
     color: var(--accent-color);
 }
 
+.contact-icon {
+    fill: currentColor;
+    align-items: center;
+    align-content: center;
+    margin-right: 10px;
+}
+
+
 /* =====HEADER END===== */
 
 /* =====HERO WITH BUTTON START===== */
 .hero-sectoin {
-    background-color: #2F303A;    
+    background-color: #2F303A;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/bg-hero.png);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1600px;
 }
 
 .main-tilte {
@@ -214,7 +228,7 @@ address {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     text-align: center;
-    font-family: var(--main-font-family);        
+    font-family: var(--main-font-family);
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
@@ -254,8 +268,23 @@ address {
 }
 
 .peculiarities-list-items:not(:last-child) {
-    margin-right: 30px; 
+    margin-right: 30px;
+}
 
+.peculiarities-list-items div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
+.peculiarties-icon {
+    --color1: #212121;
+    --color2: #2196f3;
 }
 
 .peculiarities-text {
@@ -265,6 +294,7 @@ address {
     letter-spacing: 0.42px;
     margin-top: 10px;
 }
+
 /* =====PECULIARITIES END===== */
 
 /* =====WHAT DO WE DO START===== */
@@ -291,7 +321,7 @@ address {
     padding-bottom: 94px;
 }
 
-.team-section .secondary-title{
+.team-section .secondary-title {
     margin-bottom: 50px;
 }
 
@@ -300,7 +330,7 @@ address {
     margin: 0;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
     margin-left: -30px;
     justify-content: center;
 }
@@ -313,7 +343,7 @@ address {
     border-radius: 4px;
     overflow: hidden;
 }
- 
+
 .partner-name {
     text-align: center;
     font-size: 16px;
@@ -323,12 +353,13 @@ address {
 }
 
 .position-in-team {
-    color: var(--primary-text-color) ;
+    color: var(--primary-text-color);
     text-align: center;
     font-size: 16px;
     line-height: normal;
     letter-spacing: 0.48px;
     margin-top: 10px;
+    margin-bottom: 16px;
 }
 
 .team-section {
@@ -336,20 +367,103 @@ address {
 }
 
 .card-content {
-    background-color: var(--primary-white-color); 
+    background-color: var(--primary-white-color);
     padding-bottom: 30px;
     padding-top: 30px;
-
 }
 
 
+/* =====SOCIALS ICON START===== */
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--accent-color);
+}
+
+.socials-icon {
+    fill: #AFB1B8;
+}
+
+.socials-link:focus .socials-icon,
+.socials-link:hover .socials-icon {
+    fill: var(--primary-white-color);
+}
+
+/* =====SOCIALS ICON END===== */
+
 /* =====OUR TEAM END===== */
+
+
+/* =====REGULAR CLIENTS START===== */
+.clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-icon {
+    fill: #AFB1B8;
+    ;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--accent-color);
+}
+
+.clients-list-item:hover,
+.clients-list-item:focus {
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
+}
+
+/* =====REGULAR CLIENTS END===== */
+
 
 /* =====FOOTER START===== */
 .footer {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
 }
 
 .address {
@@ -372,11 +486,44 @@ address {
     letter-spacing: 0.42px;
 }
 
-.address-list-item:not(:last-child) { 
+.address-list-item:not(:last-child) {
     margin-bottom: 12px;
 }
 
 /* =====FOOTER END===== */
+
+/* =====SOCIALS ICON DARK START===== */
+.socials-box {
+    margin-left: 94px;
+}
+
+.socials-box .third-title {
+    color: var(--primary-white-color);
+    margin-top: 0px;
+}
+
+.socials-dark {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.socials-dark .socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.10);
+    ;
+    border-radius: 50%;
+}
+
+.socials-dark .socials-link:hover {
+    background-color: var(--accent-color);
+}
+
+/* =====SOCIALS ICON DARK END===== */
 
 /* =====PORTFOLOI STSRT===== */
 .main-tilte-portfolio {
@@ -384,6 +531,7 @@ address {
 }
 
 /* =====PORTFOLOI END===== */
+
 
 /* =====FILTER STSRT===== */
 .portfolio {
@@ -393,7 +541,7 @@ address {
 
 .filter-list {
     display: flex;
-    gap: 8px;    
+    gap: 8px;
     justify-content: center;
 }
 
@@ -421,7 +569,7 @@ address {
 .filter-button:focus,
 .filter-button:hover {
     background: var(--accent-color);
-    color: var(--primary-white-color);    
+    color: var(--primary-white-color);
     box-shadow: var(--filter-buttom-shadow)
 }
 
@@ -436,13 +584,13 @@ address {
     padding: 20px 24px;
 }
 
-.work-title { 
+.work-title {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
     letter-spacing: 1.08px;
     margin-bottom: 4px;
-} 
+}
 
 .type-work {
     color: var(--primary-text-color);
@@ -451,8 +599,8 @@ address {
     letter-spacing: 0.48px;
 }
 
-.work-list {    
-    padding: 0; 
+.work-list {
+    padding: 0;
     margin: 0;
     list-style: none;
     justify-content: center;
@@ -461,14 +609,19 @@ address {
     gap: 30px;
     flex-wrap: wrap;
 }
+
 .work-link {
     color: var(--main-text-color);
 }
 
 .work-list-item {
-   flex-basis: calc((100% - 2 * 30px) / 3);
-   overflow: hidden;
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    overflow: hidden;
 }
 
+.work-list-item:hover,
+.work-list-item:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 
 /* =====OUR WORK END===== */
