@@ -196,7 +196,7 @@ address {
 /* =====HERO WITH BUTTON START===== */
 .hero-sectoin {
     background-color: #2F303A;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(/images/bg-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/bg-hero.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     background-repeat: no-repeat;
